@@ -1,21 +1,23 @@
-# biton <br /> Re-build the Internet, together!
-
-#### The Internet potluck
-
-Connect directly with your friends and explore a network of communities from
-around the world.
-
-#### Locally sourced ingredients
-
-A community space for collectively growing content and services.
-
-#### Gourmet cryptography
-
-Carefully crafted recipes to secure your communications.
-
-#### A taste of Internet freedom
-
-biton doesn't share food with nosy neighbors or data-greedy bullies.
+---
+home: true
+navbar: false
+heroImage: /logo.png
+heroText: 
+tagline: Re-build the Internet, together!
+actionText: Learn more →
+actionLink: /guide/
+features:
+- title: The Internet potluck
+  details: Connect directly with your friends and explore a network of communities from
+           around the world.
+- title: Locally sourced ingredients
+  details: A community space for collectively growing content and services.
+- title: Gourmet cryptography
+  details: Carefully crafted recipes to secure your communications.
+- title: A taste of Internet freedom
+  details: biton doesn't share food with nosy neighbors or data-greedy bullies.
+footer: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+---
 
 
 ### Is biton anonymous? - NOT YET!
@@ -35,8 +37,6 @@ that adversaries cannot be sure about who originally made a request. In this
 way, biton can be used for evading information controls and for building
 community networks around local data and services.
 
-### [Learn More](/guide/)
-
 
 ### Come along and BYOb (\*Bring Your Own biton)
 
@@ -45,7 +45,3 @@ Make the network stronger by
 [contributing](CONTRIBUTORS.md) to the project,
 [building biton applications](https://github.com/bitonproject/js-libp2p-biton),
 and volunteering to your local community kitchen.
-
-
-> smtp@bitonproject.org  
-> [PGP: 567E 168D 9FE7 6EFA 6784  B977 010F F6C7 E9B4 F3BD](bitonproject.gpg)
