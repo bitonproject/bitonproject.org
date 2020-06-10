@@ -2,6 +2,9 @@
 
 # Deploy to githubpages.io
 
+# stash uncommitted changes to avoid publishing uncommitted updates
+git stash
+
 # abort on errors
 set -e
 
@@ -20,3 +23,6 @@ git commit -m 'deploy'
 git push -f git@github.com:bitonproject/bitonproject.github.io.git master
 
 cd -
+
+# retrieve local changes from git stash
+git stash pop
