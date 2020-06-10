@@ -1,0 +1,6 @@
+[submodule "repos/biton"]
+	path = repos/biton
+	url = https://github.com/bitonproject/biton.git
+[submodule "repos/biton-web"]
+	path = repos/biton-web
+	url = https://github.com/bitonproject/biton-web.git

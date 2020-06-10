@@ -1,3 +1,5 @@
+const path = require('path')
+
 function getGuideSidebar (intro, tech, run) {
     return [
         {
@@ -21,7 +23,9 @@ function getGuideSidebar (intro, tech, run) {
             title: run,
             collapsable: false,
             children: [
-                'run/'
+                'run/',
+                ['run/biton', 'biton hybrid client'],
+                ['run/biton-web', 'biton Web client']
             ]
         }
     ]
