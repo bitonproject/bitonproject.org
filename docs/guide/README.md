@@ -1,4 +1,4 @@
-# Introducing biton, the Internet potluck
+# biton, the Internet potluck
 
 biton proposes an information-centric, service-oriented networking model built around the
 concept of swarms: local clusters of nodes that gather around a common resource or

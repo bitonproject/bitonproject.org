@@ -12,10 +12,12 @@ features:
            communities from around the world.
 - title: Locally sourced ingredients
   details: A community space for collectively growing content and services.
+- title: A taste of Internet privacy
+  details: Fence off nosy neighbors and data‑greedy bullies.
 - title: Gourmet cryptography
   details: Carefully crafted recipes to secure your communications.
-- title: A taste of Internet freedom
-  details: Fence off nosy neighbors and data‑greedy bullies.
+
+
 footer: Attribution-NonCommercial-ShareAlike 4.0 International
 ---
 

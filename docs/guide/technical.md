@@ -1,4 +1,4 @@
-# The biton overlay design
+# The biton overlay
 
 The biton overlay is constructed by mapping overloaded Content Addressable Network (CAN) coordinate zones to BitTorrent swarms. This mapping is done in a deterministic way and for multiple levels of partitioning, so as to maintain connectivity and cached content livability while handling node churn. Peer discovery and estimation of swarm size is facilitated by BitTorrent MainlineDHT.
 

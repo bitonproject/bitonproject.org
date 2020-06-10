@@ -1,5 +1,23 @@
-function getGuideSidebar(groupA, groupB, groupC) {
-
+function getGuideSidebar (groupA, groupB) {
+    return [
+        {
+            title: groupA,
+            collapsable: false,
+            children: [
+                '',
+                'threat-model',
+                'developers'
+            ]
+        },
+        {
+            title: groupB,
+            collapsable: false,
+            children: [
+                'technical',
+                'specification'
+            ]
+        }
+    ]
 }
 
 module.exports = {
@@ -11,42 +29,14 @@ module.exports = {
     themeConfig: {
         sidebar: {
             sidebarDepth: 2,
-            '/guide/': getGuideSidebar('Introduction', 'Threat model', 'Technical design'),
+            '/guide/': getGuideSidebar('Introduction', 'Technical design'),
         },
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Guide', link: '/guide/' },
         ],
         repo: 'https://github.com/bitonproject',
-        editLinks: true,
-        editLinkText: 'Help us improve this page!',
         lastUpdated: 'Last Updated',
         smoothScroll: true,
     }
-}
-
-function getGuideSidebar (groupA, groupB, groupC) {
-    return [
-        {
-            title: groupA,
-            collapsable: false,
-            children: [
-                ''
-            ]
-        },
-        {
-            title: groupB,
-            collapsable: false,
-            children: [
-                'threat-model'
-            ]
-        },
-        {
-            title: groupC,
-            collapsable: false,
-            children: [
-                'technical'
-            ]
-        }
-    ]
 }
