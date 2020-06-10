@@ -1,20 +1,27 @@
-function getGuideSidebar (groupA, groupB) {
+function getGuideSidebar (intro, tech, run) {
     return [
         {
-            title: groupA,
+            title: intro,
             collapsable: false,
             children: [
                 '',
-                'threat-model',
-                'developers'
+                'intro/threat-model',
+                'intro/developers'
             ]
         },
         {
-            title: groupB,
+            title: tech,
             collapsable: false,
             children: [
-                'technical',
-                'specification'
+                'tech/technical',
+                'tech/specification'
+            ]
+        },
+        {
+            title: run,
+            collapsable: false,
+            children: [
+                'run/'
             ]
         }
     ]
@@ -29,7 +36,7 @@ module.exports = {
     themeConfig: {
         sidebar: {
             sidebarDepth: 2,
-            '/guide/': getGuideSidebar('Introduction', 'Technical design'),
+            '/guide/': getGuideSidebar('Introduction', 'Technical design', 'Running biton'),
         },
         nav: [
             { text: 'Home', link: '/' },
