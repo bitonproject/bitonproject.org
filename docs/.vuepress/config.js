@@ -22,9 +22,9 @@ function getGuideSidebar (groupA, groupB) {
 
 module.exports = {
     title: 'biton',
-    description: 'biton is a peer-to-peer network built around local communities. Re-build the Internet, together!',
+    description: 'biton is a peer-to-peer network around local communities. Re-build the Internet, together!',
     head: [
-        ['meta', { name:'keywords', content: 'biton decentralized peer-to-peer privacy secure network'}]
+        ['meta', { name:'keywords', content: 'biton decentralized peer-to-peer privacy secure network internet freedom'}]
     ],
     themeConfig: {
         sidebar: {

@@ -16,8 +16,6 @@ features:
   details: Fence off nosy neighbors and data‑greedy bullies.
 - title: Gourmet cryptography
   details: Carefully crafted recipes to secure your communications.
-
-
 footer: Attribution-NonCommercial-ShareAlike 4.0 International
 ---
 
