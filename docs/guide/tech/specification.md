@@ -84,6 +84,6 @@ Chunks are 1KB or 32KB parts of a bitonCrypto.secretstream
 
 * Referred to as ```biton*_BitTorrent```
 * WebTorrent extension implementing ```BEP 10```
-* Extended message ```ID = “biton”```
+* Extended message ID is ```biton```
 * bencode for serialization
 * Only load extension on wires to peers in biton swarms
