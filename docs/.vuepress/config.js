@@ -33,7 +33,8 @@ function getGuideSidebar (intro, tech, run) {
 
 module.exports = {
     title: 'biton',
-    description: 'biton is a peer-to-peer network around local communities. Re-build the Internet, together!',
+    description: 'Connect directly with your friends and explore a network of\n' +
+        '           communities from around the world.',
     head: [
         ['meta', { name:'keywords', content: 'biton decentralized peer-to-peer privacy secure network internet freedom'}]
     ],
