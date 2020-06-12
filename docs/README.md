@@ -16,10 +16,10 @@ features:
   details: Fence off nosy neighbors and data‑greedy bullies.
 - title: Gourmet cryptography
   details: Carefully crafted recipes to secure your communications.
-- title: Our trusted layer cake for dessert
-  details: Replace central authorities with a layered trust model built from the bottom up.
+- title: Home-made trust
+  details: Replace central authorities with bottom-up trust models.
 - title: Mix and bake biton applications
-  details: A network stack for communities and outcasts.
+  details: A network stack with plug-and-play features for developers.
 footer: Attribution-NonCommercial-ShareAlike 4.0 International
 ---
 
