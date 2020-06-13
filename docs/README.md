@@ -16,7 +16,7 @@ features:
   details: Fence off nosy neighbors and data‑greedy bullies.
 - title: Gourmet cryptography
   details: Carefully crafted recipes to secure your communications.
-- title: Home-made trust
+- title: Homemade trust
   details: Replace central authorities with bottom-up trust models.
 - title: Mix and bake biton applications
   details: A network stack with plug-and-play features for developers.

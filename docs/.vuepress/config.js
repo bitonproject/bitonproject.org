@@ -15,7 +15,7 @@ function getGuideSidebar (intro, tech, run) {
             title: tech,
             collapsable: false,
             children: [
-                'tech/technical',
+                'tech/',
                 'tech/specification'
             ]
         },
