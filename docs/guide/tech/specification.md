@@ -3,16 +3,16 @@
 
 ## Versioning
 
-```biton.VERSION = “biton” | bitonCrypto.VERSION | “_” | biton.TRANSPORT```
+```biton.VERSION = “biton” || bitonCrypto.VERSION || “_” || biton.TRANSPORT```
 
 This document outlines the specification for ```biton0_BitTorrent```.
 
 
 ## Notation
 
-* x | y is the concatenation of x and y.
-* x || y concatenates x and y with an ampersand character ('&') as separator. For null/empty fields we write no bytes but still add the separator.
-* \[ ] denotes uint8_t arrays.
+* x || y is the concatenation of x and y without a separator.
+* x |& y concatenates x and y with an ampersand character ('&') as separator. You must use this concatenation when a field is optional. In that case, we write no bytes for the empty fields, but still add the separators.
+* \[ ] denotes byte (uint8_t) arrays.
 * s[:n] is the first n bytes of s.
 * All numeric fields in the wire protocol are transmitted as Big Endian (Network byte order) values.
 * For fields of variable length, we write the field length followed by the field value.
@@ -33,7 +33,7 @@ This document outlines the specification for ```biton0_BitTorrent```.
 ```
 keypair = bitonCrypto.generateKeyPair().x25519
 identity = bitonCrypto.base58.encode(keypair.public)
-peerId = WebTorrent.VERSION_PREFIX[:8] | identity[:12]
+peerId = WebTorrent.VERSION_PREFIX[:8] || identity[:12]
 ```
 
 > Example: for```identity = BkZgDsGD94DtZ83BwsHgce4Q4j2qr5PQGpjPQnPj8BGs```:  
@@ -43,31 +43,31 @@ or ```peerId  = 2d5757303030382d426b5a674473474439344474``` in hex.
 
 ## biton swarm address
 
-```swarmId = bitonCrypto.hash( biton.VERSION || networkMagic || swarmSecret || swarmPath )[:20]```
+```swarmId = bitonCrypto.hash( biton.VERSION |& networkMagic |& swarmSecret |& swarmPath )[:20]```
 
-* ```bitonVersion = “biton” | bitonCrypto.VERSION``` (e.g. “biton0”)
+* ```bitonVersion = “biton” || bitonCrypto.VERSION``` (e.g. “biton0”)
 * ```networkMagic```: 4 “magic” bytes for specifying a network (e.g. [0, 0, 0, 0] for the main network, and [0x74, 0x65, 0x73, 0x74] for the test network)
 * ```swarmSeed```: the secret seed for connecting to a private swarm (e.g. “orbit#biton”, or null for global swarms)
 * ```swarmPath```: the path from root to the corresponding node in the CAN partition tree,  or null for the root swarm
 
 
-> Example: ```swarmId = bitonCrypto.hash ( “biton0” || [0, 0, 0, 0] || null || 0x5 )[:20]```
+> Example: ```swarmId = bitonCrypto.hash ( “biton0” |& [0, 0, 0, 0] |& null |& 0x5 )[:20]```
 
 
 ## biton data chunk address
 
 * ```chunkHash = bitonCrypto.hash(chunk)```
-* ```chunkId = bitonCrypto.hash(biton.VERSION || networkMagic || swarmSecret || chunkHash)```
-* Mesospore wire header: ```sporeId = spore.VERSION | networkMagic | chunkId | capabilities | chunk```
+* ```chunkId = bitonCrypto.hash(biton.VERSION |& networkMagic |& swarmSecret |& chunkHash)```
+* Mesospore wire header: ```sporeId = spore.VERSION || networkMagic || chunkId || capabilities || chunk```
 
 Chunks are 1KB or 32KB parts of a bitonCrypto.secretstream
 
-> Example: ```sporeId = “spore0” | [0, 0, 0, 0] | chunkId | capabilities | chunk```
+> Example: ```sporeId = “spore0” || [0, 0, 0, 0] || chunkId || capabilities || chunk```
 
 
 ## Wire message format
 
-```“5biton” | version | networkMagic | command | command headers | payload```
+```“5biton” || version || networkMagic || command || command headers || payload```
 
 
 | Field size (bytes) | Description | Data type | Comments |
