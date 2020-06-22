@@ -48,6 +48,7 @@ module.exports = {
             { text: 'Guide', link: '/guide/' },
         ],
         repo: 'https://github.com/bitonproject',
+        repoLabel: 'Source Code',
         lastUpdated: 'Last Updated',
         smoothScroll: true,
     }
