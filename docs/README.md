@@ -1,6 +1,6 @@
 ---
 home: true
-metaTitle: biton — re-build the Internet, together!
+metaTitle: biton | Re-build the Internet, together!
 heroImage: /logo.png
 heroText: Re-build the Internet, together!
 tagline: null
@@ -37,7 +37,7 @@ community networks around local data and services.
 
 If you need to hide your identity, biton is not ready for that just yet.
 In the meantime, take a look at [Tor](https://www.torproject.org/) and
-[I2P](https://geti2p.net) for anonymous browsing, or at
+[I2P](https://geti2p.net) for browsing anonymous services, or at
 [Freenet](https://freenetproject.org) for anonymous publishing.
 :::
 

@@ -12,7 +12,7 @@ This document outlines the specification for `biton0_BitTorrent`.
 
 * `x || y` is the concatenation of x and y without a separator.
 * `x |& y` concatenates x and y with an ampersand character ('&') as separator. You must use this concatenation when a field is optional. In that case, we write no bytes for the empty fields, but still add the separators.
-* `\[ ]` denotes byte (uint8_t) arrays.
+* `[ ]` denotes byte (uint8_t) arrays.
 * `s[:n]` is the first n bytes of s.
 * All numeric fields in the wire protocol are transmitted as Big Endian (Network byte order) values.
 * For fields of variable length, we write the field length followed by the field value.
@@ -28,7 +28,7 @@ This document outlines the specification for `biton0_BitTorrent`.
   * `bitonCrypto.hash = Blake2b_256`
 
 
-## biton client address
+## biton node address
 
 ```
 keypair = bitonCrypto.generateKeyPair().x25519
@@ -36,9 +36,7 @@ identity = bitonCrypto.base58.encode(keypair.public)
 peerId = WebTorrent.VERSION_PREFIX[:8] || identity[:12]
 ```
 
-> Example: for`identity = BkZgDsGD94DtZ83BwsHgce4Q4j2qr5PQGpjPQnPj8BGs`:  
-` peerId = -WW0008-BkZgDsGD94Dt` in utf8, 
-or `peerId  = 2d5757303030382d426b5a674473474439344474` in hex.
+> Example: for`identity = BkZgDsGD94DtZ83BwsHgce4Q4j2qr5PQGpjPQnPj8BGs`, `peerId = -WW0008-BkZgDsGD94Dt` in utf8, or `peerId = 2d5757303030382d426b5a674473474439344474` in hex.
 
 
 ## biton swarm address
@@ -59,7 +57,7 @@ or `peerId  = 2d5757303030382d426b5a674473474439344474` in hex.
 * `chunkId = bitonCrypto.hash(biton.VERSION |& networkMagic |& swarmSecret |& chunkHash)`
 * Mesospore wire header: `sporeId = spore.VERSION || networkMagic || chunkId || capabilities || chunk`
 
-Chunks are 1KB or 32KB parts of a `bitonCrypto.secretstream`
+Chunks are 1KiB, 32KiB, or 256KiB parts of `bitonCrypto.secretstream`
 
 > Example: `sporeId = "spore0" || [0, 0, 0, 0] || chunkId || capabilities || chunk`
 
