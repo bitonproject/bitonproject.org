@@ -55,7 +55,7 @@ independent applications.
 
 biton will provide the following building blocks for developers:
 
-#### Identity management
+### Identity management
 
 A unified way to control cryptographic identities, and to generate [unlinkable
 pseudonymous accounts](https://dl.acm.org/doi/abs/10.1145/2994620.2994637) that
@@ -63,7 +63,7 @@ can be shared across applications built over biton. Each account has separate
 privacy policies (compartmentalization), that also concern
 [routing](https://arxiv.org/pdf/1305.5236.pdf).
 
-#### Bottom-up trust models
+### Bottom-up trust models
 
 biton provides flexible trust models that prioritize social relationships rather
 than relying on central authorities. In effect, we build a [Web of
@@ -74,7 +74,7 @@ available to decentralized applications, e.g. for discovering content and
 preventing spammers. In addition, trust is embedded into routing decisions so as
 to thwart adversaries from isolating nodes (route capture and eclipse attacks).
 
-#### The overlay network
+### The overlay network
 
 [![POSTER: Circumventing online censorship with biton](/img/biton_poster.png)](/pdf/biton_poster.pdf)
 
@@ -95,7 +95,7 @@ infrastructures, and in so it can function during Internet shutdowns as far as
 users can connect with other biton nodes in their region.
 
 
-### Balancing Anonymity – Performance – Resources
+## Balancing Anonymity – Performance – Resources
 
 Anonymity techniques, such as mixing messages and adding delays or cover
 traffic to hide user activity, come [at a cost of bandwidth and latency
