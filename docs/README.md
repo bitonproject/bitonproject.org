@@ -1,8 +1,8 @@
 ---
 home: true
 metaTitle: biton | Re-build the Internet, together!
-heroImage: /logo.png
-heroText: Re-build the Internet, together!
+heroImage: /biton_logo.jpg
+heroText: "biton: Re-build the Internet, together!"
 tagline: null
 actionText: Learn more →
 actionLink: /guide/
