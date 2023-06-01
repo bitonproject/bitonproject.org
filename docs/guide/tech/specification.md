@@ -3,8 +3,8 @@
 
 ## Versioning
 
-`biton.VERSION = "biton" || bitonCrypto.VERSION`
-`biton.PROTOCOL = biton.VERSION || "_" || biton.TRANSPORT`
+* `biton.VERSION = "biton" || bitonCrypto.VERSION`
+* `biton.PROTOCOL = biton.VERSION || "_" || biton.TRANSPORT`
 
 This document outlines the specification for protocol `biton0_BitTorrent`.
 
@@ -49,8 +49,8 @@ peerId = WebTorrent.VERSION_PREFIX[:8] || bitonId[:12]
 
 ## biton swarm address
 
-`swarmId = biton.VERSION |: networkMagic |: swarmPath |: swarmSeed`
-`swarmHash = bitonCrypto.hash( swarmId )[:20]`
+* `swarmId = biton.VERSION |: networkMagic |: swarmPath |: swarmSeed`
+* `swarmHash = bitonCrypto.hash( swarmId )[:20]`
 
 Where: 
 

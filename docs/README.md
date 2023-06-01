@@ -20,7 +20,7 @@ features:
   details: Replace central authorities with bottom-up trust models.
 - title: Mix and bake biton applications
   details: A network stack with plug-and-play features for developers.
-footer: Attribution-NonCommercial-ShareAlike 4.0 International
+footer: CC BY-NC-SA 4.0 (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International)
 ---
 
 ### The juicy details
