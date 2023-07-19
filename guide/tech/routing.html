@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Routing | biton</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="Connect directly with your friends and explore a network of
+           communities from around the world.">
+    <meta name="keywords" content="biton decentralized peer-to-peer privacy secure network internet freedom">
+    
+    <link rel="preload" href="/assets/css/0.styles.878647fa.css" as="style"><link rel="preload" href="/assets/js/app.d2feb490.js" as="script"><link rel="preload" href="/assets/js/2.6b092d03.js" as="script"><link rel="preload" href="/assets/js/14.60f6e911.js" as="script"><link rel="prefetch" href="/assets/js/10.638ef73b.js"><link rel="prefetch" href="/assets/js/11.637ac94d.js"><link rel="prefetch" href="/assets/js/12.7edfdcf0.js"><link rel="prefetch" href="/assets/js/13.339e50b4.js"><link rel="prefetch" href="/assets/js/15.6a497ce7.js"><link rel="prefetch" href="/assets/js/16.23adde12.js"><link rel="prefetch" href="/assets/js/17.62d30dad.js"><link rel="prefetch" href="/assets/js/3.6d57d1da.js"><link rel="prefetch" href="/assets/js/4.fca4814b.js"><link rel="prefetch" href="/assets/js/5.925cb319.js"><link rel="prefetch" href="/assets/js/6.4e53a11e.js"><link rel="prefetch" href="/assets/js/7.dbdffb00.js"><link rel="prefetch" href="/assets/js/8.6512c56d.js"><link rel="prefetch" href="/assets/js/9.f90c6cc6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.878647fa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">biton</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guide
+</a></div> <a href="https://github.com/bitonproject" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Source Code
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guide
+</a></div> <a href="https://github.com/bitonproject" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Source Code
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Introduction</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/" aria-current="page" class="sidebar-link">Evading information controls with biton</a></li><li><a href="/guide/intro/threat-model.html" class="sidebar-link">What information can others learn about me?</a></li><li><a href="/guide/intro/developers.html" class="sidebar-link">A building block for peer-to-peer applications</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Technical design</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/tech/" aria-current="page" class="sidebar-link">The biton overlay</a></li><li><a href="/guide/tech/specification.html" class="sidebar-link">Protocol specification</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Running biton</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/run/" class="sidebar-link">Join the biton network</a></li><li><a href="/guide/run/biton.html" class="sidebar-link">biton hybrid client</a></li><li><a href="/guide/run/biton-web.html" class="sidebar-link">biton Web client</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="routing"><a href="#routing" class="header-anchor">#</a> Routing</h1> <h2 id="basic-concepts"><a href="#basic-concepts" class="header-anchor">#</a> Basic concepts</h2> <p>Nodes are connected for as long as possible with other nodes, their peers, ordered by priority:</p> <ul><li>Friends, trusted nodes regardless their position in the overlay address space. Friends participate
+in all levels of mixing and routing.</li> <li>Commoners, peers in local swarms that are nearby in the overlay address space.</li> <li>Strangers. peers in swarms that correspond to zones of the global overlay network.</li></ul> <p>Moreover, nodes prefer <em>older, reliable</em> connections, so as to avoid various attacks from internal malicious nodes.
+We make the assumption nodes will select commoners and peers that can match their resources.</p> <p>Peer discovery for nearby peers in the address space in a local swarm (commoners), or the
+global overlay (strangers),</p> <ul><li>Nodes exchange messages over long-lived, packet-switched connections</li> <li>Routing is performed based on the local view of the network graph at each node</li> <li>Routing across swarms follows greedy routing based on peer profiling at each node</li> <li>We advise a scalable mechanism for partitioning the address space</li> <li>Trusted connections are the base for plausible deniability in the global network</li> <li>Mixing locally at the swarms the endpoints are attached to</li> <li>Mixing with trusted connections across swarms</li> <li>Efficient communications across swarms over the global biton overlay that adapt
+to the underlying network infrastructure</li> <li>Messages include a flag to designate whether they are being forwarded in local swarms (1)
+or in the global network (0)</li></ul> <h2 id="routing-with-plausible-deniability-in-the-global-biton-overlay-network"><a href="#routing-with-plausible-deniability-in-the-global-biton-overlay-network" class="header-anchor">#</a> Routing with plausible deniability in the global biton overlay network</h2> <p>Routing in biton is facilitated over virtual zones; partitions of the biton
+overlay space that we map to BitTorrent swarms. Nodes participate into multiple
+local swarms. In addition, they have a biton address that can be used for
+securely reaching others over the global biton overlay network.</p> <p>At first, messages are mixed within local swarms and among trusted peers.
+Then, nodes traverse the global biton overlay aiming for best-effort delivery of packets and
+following. the most efficient path towards
+the destination zone --- that is the swarm that corresponds to the overlay coordinate space
+longest-matching prefix of
+the destination address on the biton overlay space.
+Finally, once the message has reached the destination zone nodes
+mix  with
+When a message reaches a valid recipient, she can reply by following the inverse path
+towards the original sender.</p> <p>This process will establish different branches which improve resilience and,
+under conditions, privacy.</p> <p>Friends in different swarms assist in blending traffic across swarms.</p> <p>Routing in higher-level swarms to avoid local minima. (Freenet is using two-hop routing, where nodes learn about
+the peers of their peers).</p> <p>Local churn might hurt anonymity (adversary generates identities near target, forces target to dive into a lower swarm,
+then recipient needs to advertise longer prefixes). How does trust play out for receiver anonymity here?
+Starting many requests towards a target destination?
+Super-nodes &quot;curve&quot; the address space plane
+pretending to re-present a large part of the network (freenet cancer nodes)</p> <p>Each return message reinforces the path, meaning it increases the likelihood it will be selected for routing towards
+their biton address space zone. How does this work with nearby peers? With peers that curve the address space?</p> <p>If message comes from destination swarm, check signature before further forwarding.</p> <p>Need to study local mixing in the Kleinberg model: how to construct short routing paths in small-world networks.</p> <h3 id="mixing-global-messages-within-local-swarms"><a href="#mixing-global-messages-within-local-swarms" class="header-anchor">#</a> Mixing global messages within local swarms</h3> <p>The initiator picks a random trusted, long-lived commoner/friend peer and forwards the message.</p> <p>Node picks swarm mix probability p &gt; 1/2 and flips three biased coins (p1, p2, p3).
+For each coin take the corresponding action:</p> <ol><li>With probability p1 &gt; p forward message to a random local peer (commoner/friend), or drop the message.</li> <li>With probability p2 &gt; p * 1/2 forward message to the global swarm (friend or stranger).</li> <li>With probability p3 &gt; p ^ 2 simulate a drop delay: follow the above rules as if you were other nodes, and if you were to
+drop the message, flip new coins and repeat all steps as if just received this message.</li></ol> <p>Swarm mix probability for swarms that correspond to the global overlay network zones is 80%.</p> <p>Upon receiving a request with a recently seen label, append the egress port in the corresponding entry for that label
+in the local routing table.</p> <h4 id="anonymity-within-local-swarms"><a href="#anonymity-within-local-swarms" class="header-anchor">#</a> Anonymity within local swarms</h4> <p>For less busy local swarms, nodes decide on an epoch. At the end of each epoch,
+all nodes send a packet to a random peer they are connected to.</p> <p>This <em>heartbeat</em> is a common technique in mix networks
+for concealing the communication patterns of individuals.
+Nodes can dynamically adjust the epoch, for example send messages more frequently when the
+total payload length of the last log(n) received messages exceeds a certain threshold.</p> <p>Tuning resource consumption vs utility and plausible deniability at each node, by the rate they send messages.</p> <p>On the other side, local swarms where nodes connect would pick a much shorter epoch, or even locally experiment with
+low-latency mixing techniques, i.e. implement a stratified topology of mix  flows that follow a poisson process as in
+<a href="https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/piotrowska" target="_blank" rel="noopener noreferrer">Loopix<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.
+Such local swarms are necessary for efficient plausible deniability in the global swarm.</p> <p>Nodes that cannot connect with peers in the global swarm still need to participate in mixing global messages within their local swarms. This is a mechanism for blending in traffic from nodes without connectivity to the Internet, e.g. requests from nodes in a metropolitan network.</p> <p>An offline-first local swarm that does not generate continuous traffic would pick longer epochs.
+In those cases, this hearbeat also has implications to protocol fingerprinting (BitTorrent has a keep-alive mechanism
+with an epoch of roughly two minutes, and peers re-negotiate torrent metadata).
+In fact, smaller networks that need to hide from one another should use other
+designs for anonymity, such as DC-nets.</p> <p>The local anonymity is a building block for the anonymity of individuals</p> <p>Replication of local storage, and local-first communications, contribute as cover traffic.</p> <h3 id="routing-in-the-global-swarm"><a href="#routing-in-the-global-swarm" class="header-anchor">#</a> Routing in the global swarm</h3> <ol><li><p>If destination and my bitonId do not share common prefix:<br>
+Forward to the nearest node according to the biton overlay rules.
+(not sure if originator or request from one of his peers)</p></li> <li><p>Else if destination prefix matches n bits of my prefix:<br>
+Forward to log(n) uniformly random peers
+(probably following the biton overlay rules)</p></li></ol> <p>TTL depending on the depth of the zone in the partition tree.
+When TTL=0 forward with probability p_fg. Recipient simulates the delay of consequent nodes propagating the message according to this rule,
+and then sends a reply following the path in reverse. Multiple paths established.</p> <p>This routing strategy works best in networks where nodes contribute comparable
+resources and are in physical proximity, e.g. metropolitan networks.</p> <h2 id="recipients"><a href="#recipients" class="header-anchor">#</a> Recipients</h2> <p>Test if can decrypt message with DH key included in the message. If recipient, simulate delay and reply.</p> <h3 id="trace-back"><a href="#trace-back" class="header-anchor">#</a> Trace back</h3> <h3 id="greedy-routing-based-on-peer-profiling"><a href="#greedy-routing-based-on-peer-profiling" class="header-anchor">#</a> Greedy routing based on peer profiling</h3> <p>We need to study how strategies for improved efficiency will affect privacy. For
+example, let's introduce a routing strategy that incorporates decisions about
+which of the long-term connected peers to forward a message to, based on
+their historical success to establish circuits. This is similar to the tit-for-tat incentives that are already
+built in the BitTorrent protocol.
+This strategy will blend in factors such as link latency, real world network topology,
+centralization... As a result however, there will emerge super-nodes a concept well studied
+and in BitTorrent.
+On Compact Routing for the Internet https://arxiv.org/abs/0708.2309</p> <h3 id="bandwidth-budget"><a href="#bandwidth-budget" class="header-anchor">#</a> Bandwidth budget</h3> <ul><li>A long epoch for high latency applications (2mins BitTorrent KeepAlive), to conceal active senders and recipients</li> <li>Uniform traffic, following a Poisson process, that flows bidirectionally over peers to hide active paths</li></ul> <h2 id="the-interplay-between-the-global-swarm-and-the-local-swarms"><a href="#the-interplay-between-the-global-swarm-and-the-local-swarms" class="header-anchor">#</a> The interplay between the global swarm and the local swarms</h2> <p>We aim for plausibly deniability in the global swarm.</p> <h3 id="senders-away-from-destination"><a href="#senders-away-from-destination" class="header-anchor">#</a> Senders away from destination</h3> <p>Higher probability that they are the originators. Could be a request from a trusted
+node in a local swarm connected further away in the biton overlay.</p> <h3 id="senders-near-destination"><a href="#senders-near-destination" class="header-anchor">#</a> Senders near destination</h3> <p>Can forward to any peer that is closer without suspicion</p> <p>Reaching nodes with their local swarm address LISP?
+Distributed storage for until they get online.</p> <h2 id="label-switching"><a href="#label-switching" class="header-anchor">#</a> Label switching</h2> <p>biton overlay routers encapsulate messages between peers into MPLS packets.
+label switch routers.</p> <p>biton routing on the network routers would encapsulate biton wire messages into
+MPLS packets. To improve efficiency, in parts of the network there need to exist smart routers
+who can forward traffic according to biton rules. In fact the core of the Internet
+infrastructure does not need to make any modifications.</p> <h2 id="routing-over-bittorrent-wires"><a href="#routing-over-bittorrent-wires" class="header-anchor">#</a> Routing over BitTorrent wires</h2> <p>SYGIMGH</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d2feb490.js" defer></script><script src="/assets/js/2.6b092d03.js" defer></script><script src="/assets/js/14.60f6e911.js" defer></script>
+  </body>
+</html>
