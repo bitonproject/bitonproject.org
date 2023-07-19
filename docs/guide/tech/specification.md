@@ -22,7 +22,7 @@ This document outlines the specification for protocol `biton0_BitTorrent`.
 ## bitonCrypto.VERSION = 0
 
 * Proxying based on NoiseSocket and the noise-c library
-  * `bitonCrypto.NOISE_PROTOCOL = NOISE_*_25519_ChaChaPoly_Blake2b`
+  * `bitonCrypto.NOISE_PROTOCOL = NOISE_*_25519_XChaChaPoly_Blake2b`
 * Chunks encrypted with libsodium crypto_secretstream
   * `bitonCrypto.secretstream = secretstream_xchacha20poly1305`
 * Generic hash algorithm

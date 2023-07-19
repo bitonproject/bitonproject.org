@@ -20,7 +20,7 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:bitonproject/bitonproject.github.io.git master
+git push -f git@github.com:bitonproject/bitonproject.org.git gh-pages
 
 cd -
 
